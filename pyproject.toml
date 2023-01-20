@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "site-watchdog"
+version = "0.0.1a"
+description = "Site monitoring differ"
+authors = ["Konstantinos Papadopoulos <konpap1996@yahoo.com>"]
+packages = [{include = "site_watchdog"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+swatch = "site_watchdog.main:swatch"

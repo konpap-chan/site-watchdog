@@ -1,0 +1,24 @@
+{
+    "watch": {
+        "page_check": [
+            {
+                "url": "https://advertising.amazon.com/API/docs/en-us/info/deprecations",
+                "keywords": {
+                    "or": ["v3"]
+                }
+            },
+            {
+                "url": "https://d3a0d0y2hgofx6.cloudfront.net/rss/en-us/ad-api-rss.xml",
+                "keywords": {
+                    "and": ["v3", "Sponsored Products"]
+                }
+            }
+        ]
+    },
+    "notify": {
+        "stdout_full_diff": true
+    },
+    "store": {
+        "path": "./baseline/"
+    }
+}
